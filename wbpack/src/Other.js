@@ -1,3 +1,3 @@
-export const Other=() =>{
-    return "Hello webpack";
-}
+export const Other = () => {
+  return "Hello webpack";
+};
