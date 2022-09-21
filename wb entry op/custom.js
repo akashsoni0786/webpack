@@ -3,15 +3,15 @@ const path = require("path");
 module.exports = {
     mode:"production",
     entry:{
-        bundle:path.resolve(__dirname,'./src/index.js')},
+        bundle:path.resolve(__dirname,'./entry/index.js')},
     output:{
-        path:path.resolve(__dirname,'dist'),
+        path:path.resolve(__dirname,'output'),
         filename:"[name].js",
 
     },
     devServer:{
        static:{
-        directory:path.resolve(__dirname,'dist')
+        directory:path.resolve(__dirname,'output')
        },
         port:4500
     },
